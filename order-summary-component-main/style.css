@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Red Hat Display" , sans-serif;
+    background: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:  hsl(225, 100%, 94%);
+    position: relative;
+    min-height: 100vh;
+    text-align: center;
+}
+.container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 420px;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.text-content{
+    padding:7%;
+}
+
+.order{
+    margin-bottom: 5%;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 1.6em;
+}
+.para{
+    color: hsl(224, 23%, 55%);
+    width: 80%;
+    margin: auto;
+}
+.plan-box{
+    display: flex;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    align-items: center;
+    margin: 15px;
+    
+} 
+
+.plan-img{
+    padding: 10px;
+    margin: 10px 5px;
+}
+
+.plan-detail h5{
+    font-weight: 900;
+    color:  hsl(223, 47%, 23%);
+    margin-bottom: 5px;
+}
+.plan-detail p {
+    font-size: 14px;
+    margin-left: -10px;
+    color: hsl(224, 23%, 55%);
+}
+.plan-box a{
+    position: relative;
+    left:28%;
+    color: hsl(245, 75%, 52%);
+    font-weight: 900;
+    font-size: 0.85em;
+    
+}
+.proceed a{
+    padding: 10px;
+    color: hsl(225, 100%, 98%);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight:700 ;
+    margin: auto;
+}
+.proceed{
+    background-color: hsl(245, 75%, 52%);
+    padding: 12px;
+    border-radius: 10px;
+    width:92%;
+    margin: auto;
+    box-shadow: 0px 10px 25px -3px hsla(224, 23%, 55%, 0.75);
+    margin-top: 30px;
+
+}
+
+.cancel a{
+    color: hsl(225, 32%, 51%);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 13px;
+    
+}
+
+.cancel{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    top:7px;
+}
+.plan-detail {
+    margin-left: 5px;
+    font-size: 1.1em;
+}
+.cancel a:hover{
+    color:hsl(223, 47%, 23%);
+    font-size: .85em;
+    transition: .5s;
+}
+.proceed:hover{
+    background-color: hsl(245, 59%, 66%);
+    transition: .5s;
+}
+.plan-box a:hover{
+    color:  hsl(224, 23%, 55%);
+    text-decoration: none;
+    transition: .5s;
+    font-size: 0.87em;
+}
+.top-img img{
+    min-width: 320px;
+}
+
+@media screen and (max-width:480px){
+    .container{
+        width: 320px;
+    }
+    .top-img img{
+        background-size: contain;
+        width: 100%;
+    }
+    .para{
+        font-size: 13px;
+    }
+    .order{
+        font-size: 1.2em;
+    }
+    .plan-box a{
+        position: absolute;
+        font-size: 0.75em;
+        left: 70%;
+    }
+    .plan-detail h5{
+        font-size: .75em;
+        margin-bottom: 1px;
+        margin-left: -10px;
+    }
+    .plan-img img{
+        width:80%;
+    }
+    .plan-img{
+        padding-left: 0;
+    }
+}
